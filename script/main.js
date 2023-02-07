@@ -20,12 +20,20 @@ const fetchData = () => {
         // Check if the iteration is over
         // Run amimation if so
         if (dataArr.length === dataArr.indexOf(customData) + 1) {
-          animationTimeline();
+          // animationTimeline();
         }
       });
     });
 };
 
+const player = document.getElementById("player");
+const startBtn = document.getElementById("start-btn");
+startBtn.addEventListener("click", () => {
+  console.log(player);
+  player.play();
+  animationTimeline();
+  startBtn.style.display = "none";
+});
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually

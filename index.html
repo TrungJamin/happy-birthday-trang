@@ -12,8 +12,11 @@
 </head>
 
 <body>
+  <div class="btn-wrapper">
+    <button id="start-btn" class="start-btn">Click me!</button>
 
-  <div class="container">
+  </div>
+  <div id="container" class="container">
     <div class="one">
       <h1 class="one">
         <span data-node-name="greeting">Hey</span>
@@ -127,9 +130,16 @@
       <p class="last-smile" data-node-name="outroSmiley">:)</p>
     </div>
   </div>
+  <audio id="player" src="img/happy-birthday.mp3" autoplay loop>
+  </audio>
 </body>
-<audio src="audio/happy-birthday.mp3" autoplay loop></audio>
+
+
+<!-- <audio src="img/happy-birthday.mp3" controls autoplay loop>
+</audio> -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="application/javascript" src="script/main.js"></script>
+
 
 </html>
